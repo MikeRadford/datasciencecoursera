@@ -1,5 +1,6 @@
 ## Project 1 
 ##Load data file and look at data summary
+setClass("myDate")
 setAs("character","myDate", function(from) as.Date(from, format="%d/%m/%Y") )
 power <- read.table("household_power_consumption.txt", sep=";", header=TRUE, colClasses = c("myDate","character","numeric","numeric","numeric","numeric","numeric","numeric","numeric"),na.strings=c("?"))
 summary(power)
