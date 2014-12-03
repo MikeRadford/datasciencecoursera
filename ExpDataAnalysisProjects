@@ -6,7 +6,7 @@ summary(power)
 str(power)
 
 ### subset for specific days once loaded
-power2 <- subset(power, Date >= "01/02/2007" & Date <= "02/02/2007")
+power2 <- subset(power, Date >= "2007-02-01" & Date <= "20007-02-02")
 
 ###convert date and time into a datetime field and add as extra column
 temp <- paste(power2$Date,power2$Time)
